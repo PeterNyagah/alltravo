@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/flight"-->
+        <!--android:id="@+id/logo"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <utils.customfonts.MyTextView_Roboto_Medium
+                android:id="@+id/text_airline"
+                android:layout_width="0dp"
+                android:layout_weight=".70"
+                android:layout_height="wrap_content"
+                android:text="Kericho -> Nairobi \nFly 540 \n2hrs \nEconomy"
+                android:textColor="@color/textblack"
+                android:textSize="15dp" />
+
+            <utils.customfonts.MyTextView_Roboto_Medium
+                android:id="@+id/text_time"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="completed"
+                android:textColor="#009900"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <utils.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/text_timeschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="26/10/2018"
+            android:textColor="@color/subtext_listview"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/viewline" />
+
+</LinearLayout>
+
+

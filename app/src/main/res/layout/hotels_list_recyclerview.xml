@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/ll1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#fafafa">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/nyimg"
+                android:src="@drawable/roadriding"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="6.6dip"
+                app:riv_mutate_background="true"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:elevation="2dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <utils.customfonts.MyTextView_Roboto_Medium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Road Riding Essentials\n
+                For a 200km Ride"
+                android:id="@+id/nytext1"
+                android:textColor="#1c252a"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="#ffc107"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="3"
+                    android:isIndicator="false"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="10dp">
+
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ksh. 250,000"
+                    android:textColor="#0091ea"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/nytext2"/>
+
+                <utils.customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/btn_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign_ract"
+                    android:text="View"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="12sp"
+                    android:paddingRight="33dp"
+                    android:paddingLeft="33dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d4dce1"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

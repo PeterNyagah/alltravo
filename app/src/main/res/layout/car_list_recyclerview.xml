@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fafafa"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carimage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/car"
+                app:riv_corner_radius="6.6dip"
+                app:riv_mutate_background="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/txtcarname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Mercede Benz"
+                    android:textColor="#1c252a"
+                    android:textSize="15sp" />
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/txtcarplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="KCZ 343Z"
+                    android:textColor="#1c252a"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/txtcarcapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="5 Adults"
+                    android:textColor="#1c252a"
+                    android:textSize="15sp" />
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/txtcarcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="Nairobi"
+                    android:textColor="#1c252a"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/txtcarfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Ksh. 5000"
+                    android:textColor="#0091ea"
+                    android:textSize="15sp" />
+
+                <utils.customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/btn_car_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sign_ract"
+                    android:paddingLeft="33dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="33dp"
+                    android:paddingBottom="12dp"
+                    android:text="View"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#d4dce1" />
+
+</LinearLayout>

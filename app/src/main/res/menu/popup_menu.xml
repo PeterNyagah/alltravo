@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_self"
+        android:title="Book for Self" />
+    <!--<item-->
+        <!--android:id="@+id/menu_other"-->
+        <!--android:title="Book for Other Person" />-->
+</menu>

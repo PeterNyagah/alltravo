@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cars.fragments.CarFragment">
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Sorry, we do not have Cars at the moment"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    //filter floating button
+
+    <LinearLayout
+
+        android:id="@+id/lyt_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_filter_car"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rectangle_navyblue"
+            android:drawableStart="@drawable/ic_filter_list_white_24dp"
+            android:letterSpacing="0.0525"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="  Filter"
+            android:textColor="@color/white"
+            android:textSize="12.7sp" />
+    </LinearLayout>
+
+</FrameLayout>

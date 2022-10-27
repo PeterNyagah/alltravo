@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="e.wolfsoft1.liberty_ui_kit">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo4"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name="cars.activities.CarDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="cars.activities.CarHireActivity"
+            android:label="@string/title_activity_car_hire"
+            android:parentActivityName="startup.Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="startup.Home" />
+        </activity>
+        <activity android:name="startup.AboutActivity" />
+        <activity android:name="user.LoginActivity" />
+        <activity android:name="user.ForgotPasswordActivity" />
+        <activity android:name="packages.activities.PackagesActivity" />
+        <activity android:name="flights.activities.FlightsActivity" />
+        <activity android:name="startup.Home" />
+        <activity android:name="flights.activities.Flights_List_Activity" />
+        <activity android:name="flights.activities.FlightViewDetailsActivity" />
+        <activity android:name="trips.activities.MyTripsViewDetailsActivity" />
+        <activity android:name="user.ProfileActivity" />
+        <activity android:name="trips.activities.MyTrips_List_Activity" />
+        <activity android:name="payments.activities.Payments_List_Activity" />
+        <activity android:name="payments.activities.Payment_method" />
+        <activity android:name="payments.activities.Payment_Details" />
+        <activity android:name="packages.activities.PackagesViewDetailsActivity" />
+        <activity android:name="user.SignActivity" />
+        <activity android:name="user.UpdateProfileActivity" />
+        <activity android:name="user.SignUpActivity" />
+        <activity android:name="startup.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="hotels.activities.HotelViewDetailsActivity" />
+        <activity android:name="hotels.activities.HotelBookingDetails" />
+        <activity android:name="hotels.activities.HotelActivity" />
+    </application>
+
+</manifest>

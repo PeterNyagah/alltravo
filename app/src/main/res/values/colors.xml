@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#907234</color>
+    <color name="colorPrimaryDark">#907234</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellowcolor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="colorGrey">#51fcd4f5</color>
+    <color name="colorDarkGrey">#a53692</color>
+    <color name="transperent">#00000000</color>
+    <color name="sub_txt">#8e8e93</color>
+    <color name="blue">#405499</color>
+    <color name="view_line">#8e8e93</color>
+    <color name="red">#ff3b30</color>
+    <color name="keyboard">#fafafa</color>
+    <color name="bg_clolor">#fafafa</color>
+
+    <color name="viewline">#cacbcc</color>
+    <color name="city_name">#627083</color>
+    <color name="dep">#7c7b7b</color>
+    <color name="textblack">#282a2c</color>
+    <color name="subtext_listview">#8392a7</color>
+    <color name="border">#dddddd</color>
+    <color name="mainTextColor">#282A2C</color>
+    <color name="subTextColor">#908484</color>
+
+    <color name="alltravored">#FB3C3B</color>
+    <color name="alltravogw">#3B3B3B</color>
+
+    <color name="toolbar">#a53692</color>
+
+
+    <color name="colorLightGray">#EEEEEE</color>
+    <color name="backgroundDefault">#FFFFFF</color>
+
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#23283a</color>
+    <color name="pink">#fe104d</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="background">#fcfcfc</color>
+
+    <color name="background1">#f7f7f7</color>
+</resources>

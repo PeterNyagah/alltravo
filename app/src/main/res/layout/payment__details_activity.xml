@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="payments.activities.Payment_Details">
+
+    <include layout="@layout/toolbar_flights" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffffff"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_visa"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_visa"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_mpesa"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mpesa_logo"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_master"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_mastercard"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="170dp"
+                    android:src="@drawable/ic_right" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_border"
+            app:cardCornerRadius="5dp"
+
+            card_view:cardElevation="9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_border">
+
+                    <utils.customfonts.EditText_Roboto_Regular
+                        android:id="@+id/edtxt_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="CARD NUMBER"
+                        android:padding="15dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_border">
+
+                    <utils.customfonts.EditText_Roboto_Regular
+                        android:visibility="gone"
+                        android:id="@+id/edtxt_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="PHONE NUMBER eg +254 712345678"
+                        android:padding="15dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_card_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:background="@drawable/round_border">
+
+                    <utils.customfonts.EditText_Roboto_Regular
+                        android:visibility="gone"
+                        android:id="@+id/edtxt_card_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="CARDHOLDER'S NAME"
+                        android:padding="15dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_card_expiry_n_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/round_border">
+
+
+                        <Spinner
+                            android:id="@+id/spinner_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner">
+
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/round_border">
+
+
+                        <Spinner
+                            android:id="@+id/spinner_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner">
+
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/round_border">
+
+                        <utils.customfonts.EditText_Roboto_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:hint="CVV"
+                            android:padding="13dp"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="   Save payment method information" />
+
+                <utils.customfonts.MyTextView_Roboto_Medium
+                    android:visibility="gone"
+                    android:id="@+id/btn_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Process Payment"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <utils.customfonts.MyTextView_Roboto_Regular
+                    android:visibility="gone"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button2"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Back"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

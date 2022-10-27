@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Account">
+
+        <menu>
+            <item
+                android:id="@+id/nav_myTrips"
+                android:icon="@drawable/ic_view_list_black_24dp"
+                android:title="My Bookings" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/nav_payments"
+                android:icon="@drawable/ic_payments"
+                android:title="Payments" />
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@drawable/baseline_chat_black_24"
+                android:title="Chat" />
+
+
+
+        </menu>
+
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_business_black_24"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_call"
+            android:title="Call Us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "17907441452",
+    "firebase_url": "https://alltravoapp-649ef.firebaseio.com",
+    "project_id": "alltravoapp-649ef",
+    "storage_bucket": "alltravoapp-649ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17907441452:android:0db6c94d59e06a31ef9689",
+        "android_client_info": {
+          "package_name": "alltravo.knightsoft.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17907441452-r9ar9lna8j9fu2jn1l7k0uce71ndiqf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "alltravo.knightsoft.com",
+            "certificate_hash": "309117f74d6507599620fd79cd584ad711d1066f"
+          }
+        },
+        {
+          "client_id": "17907441452-3n1ok2p25jv38lc71ob8ej48td3e6c7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "alltravo.knightsoft.com",
+            "certificate_hash": "27b40f279874a7843f2ef500b51d7918f1eeaab5"
+          }
+        },
+        {
+          "client_id": "17907441452-0c8divsvocfneifqufefo54ulm3gh1r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARiC4VPhfypK4534KS1Z8DHcqX4VlM1TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17907441452-0c8divsvocfneifqufefo54ulm3gh1r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

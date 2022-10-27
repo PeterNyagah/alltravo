@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="18.3dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="21.7dp"
+        android:text="Filter Car by Name, City or Price"
+        android:textSize="12.7sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="17.3dp"
+        android:layout_marginRight="16.3dp"
+        android:background="@drawable/rectangle_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="13.7dp"
+        android:paddingTop="13.3dp"
+        android:paddingRight="23.3dp"
+        android:paddingBottom="13.3dp">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search_black" />
+
+        <EditText
+            android:id="@+id/edtxt_search_car_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:layout_weight="1"
+            android:background="@color/transperent"
+            android:hint="| Vehicle's Name"
+            android:imeOptions="actionSearch"
+            android:letterSpacing="0.0525"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_white"
+            android:src="@drawable/ic_cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="17.3dp"
+        android:layout_marginRight="16.3dp"
+        android:background="@drawable/rectangle_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="13.7dp"
+        android:paddingTop="13.3dp"
+        android:paddingRight="23.3dp"
+        android:paddingBottom="13.3dp">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search_black" />
+
+        <EditText
+            android:id="@+id/edtxt_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:layout_weight="1"
+            android:background="@color/transperent"
+            android:hint="| City"
+            android:imeOptions="actionSearch"
+            android:letterSpacing="0.0525"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_clear2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_white"
+            android:src="@drawable/ic_cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="17.3dp"
+        android:layout_marginRight="16.3dp"
+        android:background="@drawable/rectangle_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="13.7dp"
+        android:paddingTop="13.3dp"
+        android:paddingRight="23.3dp"
+        android:paddingBottom="13.3dp">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search_black" />
+
+        <EditText
+            android:id="@+id/edtxt_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:layout_weight="1"
+            android:background="@color/transperent"
+            android:hint="| Price less than"
+            android:imeOptions="actionSearch"
+            android:letterSpacing="0.0525"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_clear3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_white"
+            android:src="@drawable/ic_cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <utils.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/filter_cancel_ract"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="5dp"
+            android:text="Clear"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <utils.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/btn_done"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/filter_done_ract"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="5dp"
+            android:text="Done"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
